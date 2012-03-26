@@ -1,0 +1,330 @@
+/*
+ * CSS for Browzr.js | A jQuery Plugin
+ * http://www.browzrjs.org
+ * Copyright © 2012 Ryan Altvater
+ * Released under the MIT license
+ * http://www.browzrjs.org/license/
+ * Date: Monday March 26th, 2012 12:11:38 -0500
+ *
+ * @name Browzr.js
+ * @type jQuery Plugin
+ * @requires jQuery v1.7.1
+ * @cat Plugins/Windows and Overlays
+ * @author Ryan Altvater (http://www.ryanaltvater.com)
+ */
+
+
+/* ================== */
+/* ! SELECTION COLOR  */
+/* ================== */
+
+::-webkit-selection {
+	background: #e03a3a;
+	color: #fff;
+}
+::-moz-selection {
+	background: #e03a3a;
+	color: #fff;
+}
+::selection {
+	background: #e03a3a;
+	color: #fff;
+}
+
+
+/* ===================== */
+/* ! BROWZR.JS OVERLAY   */
+/* ===================== */
+
+#overlay {
+	height: 100%;
+	width: 100%;
+	background: url('overlay.png') repeat left top transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99999;
+}
+
+
+/* ==================== */
+/* ! BROWZR.JS WINDOW   */
+/* ==================== */
+
+#browzr {
+	margin: 0px auto;
+	height: 245px;
+	width: 565px;
+	background: #fff;
+	position: fixed;
+	z-index: 999999;
+	-webkit-box-shadow: 0px 3px 5px #111;
+	   -moz-box-shadow: 0px 3px 5px #111;
+	        box-shadow: 0px 3px 5px #111;
+}
+#browzr p {
+	margin: 14px 0px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #585d63;
+}
+
+
+/* ===================== */
+/* ! WARNING CONTAINER   */
+/* ===================== */
+
+#warning {
+	padding: 11px 20px;
+	height: 223px;
+	width: 195px;
+	background: #ffcbcb;
+	background: -webkit-linear-gradient(bottom, #ffcbcb 0%, #fff 100%);
+	background: -moz-linear-gradient(bottom, #ffcbcb 0%, #fff 100%);
+	background: -ms-linear-gradient(bottom, #ffcbcb 0%, #fff 100%);
+	background: -o-linear-gradient(bottom, #ffcbcb 0%, #fff 100%);
+	background: linear-gradient(bottom, #ffcbcb 0%, #fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffcbcb');
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	float: left;
+	border-right: 1px solid #d9dce0;
+	-webkit-box-shadow: inset 0px 0px 1px #fff;
+	   -moz-box-shadow: inset 0px 0px 1px #fff;
+	        box-shadow: inset 0px 0px 1px #fff;
+}
+#warning h2 {
+	margin-top: 12px;
+	padding-bottom: 17px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #e03a3a;
+	border-bottom: 1px solid #e7e8e8;
+}
+
+
+/* ======================= */
+/* ! CHROME FRAME BUTTON   */
+/* ======================= */
+
+#warning #chrome-frame {
+	margin-top: 32px;
+}
+#warning #chrome-frame a {
+	padding: 7px 10px 9px;
+	background: #22aec4;
+	background: -webkit-linear-gradient(bottom, #22aec4 0%, #187e8e 100%);
+	background: -moz-linear-gradient(bottom, #22aec4 0%, #187e8e 100%);
+	background: -ms-linear-gradient(bottom, #22aec4 0%, #187e8e 100%);
+	background: -o-linear-gradient(bottom, #22aec4 0%, #187e8e 100%);
+	background: linear-gradient(bottom, #22aec4 0%, #187e8e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#187e8e', endColorstr='#22aec4');
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 1px #187e8e;
+	color: #fff;
+	border: 1px solid #187e8e;
+	-webkit-box-shadow: 0px 1px 0px #187e8e;
+	   -moz-box-shadow: 0px 1px 0px #187e8e;
+	        box-shadow: 0px 1px 0px #187e8e;
+}
+#warning #chrome-frame a:hover {
+	position: relative;
+	top: -2px;
+	-webkit-box-shadow: 0px 3px 0px #187e8e;
+	   -moz-box-shadow: 0px 3px 0px #187e8e;
+	        box-shadow: 0px 3px 0px #187e8e;
+}
+#warning #chrome-frame a:active {
+	top: 0px;
+	-webkit-box-shadow: 0px 1px 0px #187e8e;
+	   -moz-box-shadow: 0px 1px 0px #187e8e;
+	        box-shadow: 0px 1px 0px #187e8e;
+}
+
+
+/* ====================== */
+/* ! DOWNLOAD CONTAINER   */
+/* ====================== */
+
+#download {
+	padding: 10px 20px;
+	height: 225px;
+	width: 289px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	float: right;
+}
+#download h2 {
+	margin-top: 12px;
+	padding-bottom: 17px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #585d63;
+	border-bottom: 1px solid #e7e8e8;
+}
+
+
+/* ================ */
+/* ! CLOSE BUTTON   */
+/* ================ */
+
+#download #close {
+	margin: -3px 0 -11px 255px;
+}
+#download #close a {
+	padding: 7px 10px 9px;
+	background: #f65656;
+	background: -webkit-linear-gradient(bottom, #f65656 0%, #bf2e2e 100%);
+	background: -moz-linear-gradient(bottom, #f65656 0%, #bf2e2e 100%);
+	background: -ms-linear-gradient(bottom, #f65656 0%, #bf2e2e 100%);
+	background: -o-linear-gradient(bottom, #f65656 0%, #bf2e2e 100%);
+	background: linear-gradient(bottom, #f65656 0%, #bf2e2e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf2e2e', endColorstr='#f65656');
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0px 1px #bf2e2e;
+	border: 1px solid #bf2e2e;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 1px 0px #bf2e2e;
+	   -moz-box-shadow: 0px 1px 0px #bf2e2e;
+	        box-shadow: 0px 1px 0px #bf2e2e;
+}
+#download #close a:hover {
+	position: relative;
+	top: -2px;
+	-webkit-box-shadow: 0px 3px 0px #bf2e2e;
+	   -moz-box-shadow: 0px 3px 0px #bf2e2e;
+	        box-shadow: 0px 3px 0px #bf2e2e;
+}
+#download #close a:active {
+	position: relative;
+	top: 0px;
+	-webkit-box-shadow: 0px 1px 0px #bf2e2e;
+	   -moz-box-shadow: 0px 1px 0px #bf2e2e;
+	        box-shadow: 0px 1px 0px #bf2e2e;
+}
+
+
+/* ================= */
+/* ! BROWSER ICONS   */
+/* ================= */
+
+ul#browsers {
+	padding: 0px;
+	width: 100%;
+	list-style: none;
+}
+ul#browsers li {
+	margin-right: 13px;
+	float: left;
+}
+ul#browsers li:last-child {
+	margin-right: 0px;
+}
+ul#browsers li img {
+	margin: 2px 0px 24px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+@-moz-document url-prefix() {
+	ul#browsers li img {
+		margin: 2px 0px 21px;
+	}
+}
+
+
+/* =================== */
+/* ! INSTALL BUTTONS   */
+/* =================== */
+
+ul#browsers li a.install {
+	padding: 7px 10px 9px;
+	background: #c1c1c1;
+	background: -webkit-linear-gradient(bottom, #c1c1c1 0%, #8f8f8f 100%);
+	background: -moz-linear-gradient(bottom, #c1c1c1 0%, #8f8f8f 100%);
+	background: -ms-linear-gradient(bottom, #c1c1c1 0%, #8f8f8f 100%);
+	background: -o-linear-gradient(bottom, #c1c1c1 0%, #8f8f8f 100%);
+	background: linear-gradient(bottom, #c1c1c1 0%, #8f8f8f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8f8f8f', endColorstr='#c1c1c1');
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 1px #8f8f8f;
+	color: #fff;
+	border: 1px solid #8f8f8f;
+	-webkit-box-shadow: 0px 1px 0px #8f8f8f;
+	   -moz-box-shadow: 0px 1px 0px #8f8f8f;
+	        box-shadow: 0px 1px 0px #8f8f8f;
+}
+ul#browsers li a.install:hover {
+	background: #42aa34;
+	background: -webkit-linear-gradient(bottom, #42aa34 0%, #267b20 100%);
+	background: -moz-linear-gradient(bottom, #42aa34 0%, #267b20 100%);
+	background: -ms-linear-gradient(bottom, #42aa34 0%, #267b20 100%);
+	background: -o-linear-gradient(bottom, #42aa34 0%, #267b20 100%);
+	background: linear-gradient(bottom, #42aa34 0%, #267b20 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#267b20', endColorstr='#42aa34');
+	text-shadow: 0 1px #267b20;
+	position: relative;
+	top: -2px;
+	border: 1px solid #267b20;
+	-webkit-box-shadow: 0px 3px 0px #267b20;
+	   -moz-box-shadow: 0px 3px 0px #267b20;
+	        box-shadow: 0px 3px 0px #267b20;
+}
+ul#browsers li a.install:active:hover {
+	top: 0px;
+	-webkit-box-shadow: 0px 1px 0px #267b20;
+	   -moz-box-shadow: 0px 1px 0px #267b20;
+	        box-shadow: 0px 1px 0px #267b20;
+}
+
+
+/* ======= */
+/* ! IE9   */
+/* ======= */
+
+.ie9 ul#browsers li a.install {
+	padding-top: 8px;
+}
+.ie9 #warning h2 {
+	border-bottom: 1px solid #e7e8e8;
+}
+
+
+/* =============== */
+/* ! IE8 + OLDIE   */
+/* =============== */
+
+.ie8 #download #close, .oldie #download #close {
+	margin-top: -2px;
+}
+.ie8 ul#browsers, .oldie ul#browsers {
+	width: 300px;
+}
+.ie8 ul#browsers li img {
+	margin-bottom: 23px;
+}
+.ie8 #warning #chrome-frame a:hover, .ie8 #download #close a:hover, .ie8 ul#browsers li a.install:hover, .oldie #warning #chrome-frame a:hover, .oldie #download #close a:hover, .oldie ul#browsers li a.install:hover {
+	top: 0px;
+}
+
+
+/* ========= */
+/* ! OLDIE   */
+/* ========= */
+
+.oldie #warning h2 {
+	margin-top: 23px;
+}
+.oldie ul#browsers li img {
+	margin-bottom: 17px;
+}
+.oldie ul#browsers li a.install {
+	display: block;
+}
