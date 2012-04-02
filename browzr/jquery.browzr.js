@@ -14,7 +14,8 @@
  */
 
 
-(function($){
+;(function($, doc, win){
+	"use strict";
 	$.fn.browzr = function(){
 
 
@@ -50,7 +51,7 @@
 
 
 ////////// Pop-up HTML and the initial fade-in transition
-						$('<div id="overlay"></div><div id="browzr"><div id="warning"><h2>Browser not supported!</h2><p>The website you are trying to view does not support this browser. For the best experience possible, it is recommended that you download Google’s Chrome Frame plugin.</p><div id="chrome-frame"><a href="http://www.google.com/chromeframe">Install Chrome Frame</a></div></div><div id="download"><div id="close"><a>Close</a></div><h2>Don&#39;t want Chrome Frame?</h2><p>Download a supported browser.</p><ul id="browsers"><li id="chrome"><img class="chrome" src="browzr/chrome.png" height="63" width="62" title="Chrome" alt="Chrome"><br><a class="install" href="https://www.google.com/chrome">Install</a></li><li id="firefox"><img class="firefox" src="browzr/firefox.png" height="63" width="62" title="Firefox" alt="Firefox"><br><a class="install" href="http://www.mozilla.com/firefox">Install</a></li><li id="safari"><img class="safari" src="browzr/safari.png" height="63" width="62" title="Safari" alt="Safari"><br><a class="install" href="http://www.apple.com/safari">Install</a></li><li id="ie"><img class="ie" src="browzr/ie.png" height="63" width="62" title="IE" alt="IE"><br><a class="install" href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie">Install</a></li></ul></div></div>').hide().appendTo('body').fadeIn('fast');
+						$('<div id="overlay"></div><div id="browzr"><div id="warning"><h2>Browser not supported!</h2><p>The website you are trying to view does not support this browser. For the best experience possible, it is recommended that you download Google’s Chrome Frame plugin.</p><div id="chrome-frame"><a href="http://www.google.com/chromeframe">Install Chrome Frame</a></div></div><div id="download"><div id="close"><a>Close</a></div><h2>Don&#39;t want Chrome Frame?</h2><p>Download a supported browser.</p><ul id="browsers"><li id="chrome"><div class="icon"><span>Chrome Icon</span></div><br><a class="install" href="https://www.google.com/chrome">Install</a></li><li id="firefox"><div class="icon"><span>Firefox Icon</span></div><br><a class="install" href="http://www.mozilla.com/firefox">Install</a></li><li id="safari"><div class="icon"><span>Safari Icon</span></div><br><a class="install" href="http://www.apple.com/safari">Install</a></li><li id="ie"><div class="icon"><span>IE Icon</span></div><br><a class="install" href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie">Install</a></li></ul></div></div>').hide().appendTo('body').fadeIn('fast');
 
 
 ////////// Positioning that centers the pop-up based on the window size
@@ -69,13 +70,13 @@
 /////////// Hover animations for the "Install" buttons (will minify this section in a future release)
 						// Google Chrome
     					$('#chrome a.install').mouseover(function(){
-        					$('#chrome img').stop().animate({
+        					$('#chrome .icon').stop().animate({
             					opacity: '1'
         					});
     					});
     				
     					$('#chrome a.install').mouseout(function(){
-        					$('#chrome img').stop().animate({
+        					$('#chrome .icon').stop().animate({
             					opacity: '0.5'
         					});
     					});
@@ -83,13 +84,13 @@
     				
 						// Mozilla Firefox
     					$('#firefox a.install').mouseover(function(){
-        					$('#firefox img').stop().animate({
+        					$('#firefox .icon').stop().animate({
             					opacity: '1'
         					});
     					});
     				
     					$('#firefox a.install').mouseout(function(){
-        					$('#firefox img').stop().animate({
+        					$('#firefox .icon').stop().animate({
             					opacity: '0.5'
         					});
     					});
@@ -97,13 +98,13 @@
     				
 						// Apple Safari
     					$('#safari a.install').mouseover(function(){
-        					$('#safari img').stop().animate({
+        					$('#safari .icon').stop().animate({
             					opacity: '1'
         					});
     					});
     				
     					$('#safari a.install').mouseout(function(){
-        					$('#safari img').stop().animate({
+        					$('#safari .icon').stop().animate({
             					opacity: '0.5'
         					});
     					});
@@ -111,13 +112,13 @@
     				
 						// Microsoft Internet Explorer
     					$('#ie a.install').mouseover(function(){
-        					$('#ie img').stop().animate({
+        					$('#ie .icon').stop().animate({
             					opacity: '1'
         					});
     					});
     				
     					$('#ie a.install').mouseout(function(){
-        					$('#ie img').stop().animate({
+        					$('#ie .icon').stop().animate({
             					opacity: '0.5'
         					});
     					});
@@ -193,4 +194,4 @@
         }
         return null;
     };
-})(jQuery);
+})(jQuery, document, window);

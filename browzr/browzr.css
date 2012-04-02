@@ -226,14 +226,31 @@ ul#browsers li {
 ul#browsers li:last-child {
 	margin-right: 0px;
 }
-ul#browsers li img {
-	margin: 2px 0px 24px;
+ul#browsers li .icon {
+	margin: 2px 0px 14px;
+	height: 63px;
+	width: 62px;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
+ul#browsers li .icon span {
+	display: none;
+}
+ul#browsers li#chrome .icon {
+	background: url('chrome.png') no-repeat left top transparent;
+}
+ul#browsers li#firefox .icon {
+	background: url('firefox.png') no-repeat left top transparent;
+}
+ul#browsers li#safari .icon {
+	background: url('safari.png') no-repeat left top transparent;
+}
+ul#browsers li#ie .icon {
+	background: url('ie.png') no-repeat left top transparent;
+}
 @-moz-document url-prefix() {
-	ul#browsers li img {
-		margin: 2px 0px 21px;
+	ul#browsers li .icon {
+		margin: 0px 0px 12px;
 	}
 }
 
@@ -307,8 +324,8 @@ ul#browsers li a.install:active:hover {
 .ie8 ul#browsers, .oldie ul#browsers {
 	width: 300px;
 }
-.ie8 ul#browsers li img {
-	margin-bottom: 23px;
+.ie8 ul#browsers li .icon {
+	margin-bottom: 13px;
 }
 .ie8 #warning #chrome-frame a:hover, .ie8 #download #close a:hover, .ie8 ul#browsers li a.install:hover, .oldie #warning #chrome-frame a:hover, .oldie #download #close a:hover, .oldie ul#browsers li a.install:hover {
 	top: 0px;
@@ -322,8 +339,8 @@ ul#browsers li a.install:active:hover {
 .oldie #warning h2 {
 	margin-top: 23px;
 }
-.oldie ul#browsers li img {
-	margin-bottom: 17px;
+.oldie ul#browsers li .icon {
+	margin-bottom: 5px;
 }
 .oldie ul#browsers li a.install {
 	display: block;
