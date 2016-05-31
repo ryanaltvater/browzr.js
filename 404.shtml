@@ -10,16 +10,13 @@
 
 	<title>Browzr.js | A jQuery Plugin</title>
 	<meta name="author" content="Ryan Altvater">
-	<meta name="description" content="Browzr.js is a jQuery plugin that executes an attractive modal window when a website doesn't support a specified browser.">
-	<meta name="keywords" content="browzr, browser, jquery, js, javascript, plugin, browzr jquery, browser jquery, browzr js, browser js, browzrjs, browserjs, browzr.js, browser.js, browzr javascript, browser javascript, jquery plugin, js plugin, javascript plugin, browzr jquery plugin, browser jquery plugin, browzr js plugin, browser js plugin, browzrjs plugin, browserjs plugin, browzr.js plugin, browser.js plugin, browzr javascript plugin, browser javascript plugin">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 
-	<link rel="apple-touch-icon" href="assets/images/theme/icon-touch.png">
-	<link rel="shortcut icon" href="assets/images/theme/favicon.ico">
+	<link rel="apple-touch-icon" href="../assets/images/theme/icon-touch.png">
+	<link rel="shortcut icon" href="../assets/images/theme/favicon.ico">
 
-	<link rel="stylesheet" href="browzr/browzr.css">
 	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="assets/css/shCore.css">
-	<link rel="stylesheet" href="assets/css/shThemeDefault.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -36,54 +33,23 @@
 </head>
 
 <body>
-	<a href="https://github.com/ryyaaaannnnn/jquery.browzr" target="_blank" onclick="ga('send', 'event', 'Buttons￼', 'Click￼', 'Fork');"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 	<div id="wrapper">
 		<header>
 			<a href="./"><img src="assets/images/theme/logo.png" alt="BROWZR.JS A JQUERY PLUGIN"></a>
 			<img class="shadow-bottom" src="assets/images/theme/shadow-bottom.png" alt="">
 			<p class="blurb"><strong><em>Browzr.js</em></strong> is a jQuery plugin that executes an <em>attractive</em> modal window when a website doesn't support a specified browser.</p>
 			<div class="ctas">
-				<a class="preview" onclick="ga('send', 'event', 'Buttons￼', 'Click￼', 'Preview￼');"></a>
-				<a class="download" href="download/jquery.browzr.zip" onclick="ga('send', 'event', 'Buttons￼', 'Click￼', 'Download￼');"></a>
-				<a class="github" href="https://github.com/ryyaaaannnnn/jquery.browzr" onclick="ga('send', 'event', 'Buttons￼', 'Click￼', 'GitHub￼');"></a>
+				<a class="unavailable preview"></a>
+				<a class="unavailable download"></a>
+				<a class="unavailable github"></a>
 			</div>
 		</header>
 		<section id="content">
 			<div class="left">
 				<div class="documentation">
-					<h2>Getting Started</h2>
-					<ol>
-						<li>Download the .zip, or fork the files from GitHub.</li>
-						<li>Include the "browzr" folder in your site structure.</li>
-						<li>Use the following syntax in your document, making sure all files are linked correctly.</li>
-						<li>Edit the "jquery.browzr.js" file to specify the targeted browser(s).</li>
-					</ol>
-					<h2>&lt;html&gt;</h2>
-					<p>Include the IE conditional statements that wrap the html tag. These conditionals provide CSS fixes for IE browsers.</p>
-					<pre class="brush: css">
-						&lt;!DOCTYPE html&gt;
-						&lt;!--[if lt IE 8]&gt;&lt;html class="ie9 ie8 oldie" lang="en"&gt;&lt;![endif]--&gt;
-						&lt;!--[if IE 8]&gt;&lt;html class="ie9 ie8" lang="en"&gt;&lt;![endif]--&gt;
-						&lt;!--[if IE 9]&gt;&lt;html class="ie9" lang="en"&gt;&lt;![endif]--&gt;
-						&lt;!--[if gt IE 9]&gt;&lt;!--&gt;&lt;html lang="en"&gt;&lt;!--&lt;![endif]--&gt;
-					</pre>
-					<br>
-					<h2>&lt;head&gt;</h2>
-					<p>Link to the included stylesheet for complete awesomeness!</p>
-					<pre class="brush: css">
-    					&lt;link rel="stylesheet" href="browzr/browzr.css" /&gt;
-					</pre>
-					<br>
-					<h2>&lt;body&gt;</h2>
-					<p>For best performance, paste the scripts before the closing body tag.</p>
-					<pre class="brush: css">
-						&lt;script src="browzr/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
-						&lt;script src="browzr/jquery.browzr.js"&gt;&lt;/script&gt;
-						&lt;script&gt;
-							$('body').browzr();
-						&lt;/script&gt;
-					</pre>
-					<div id="disqus_thread"></div>
+					<h2>Page not found</h2>
+					<p>Sorry, but the page you were looking for can't be found. You may have mistyped the URL, or the page does not exist. Don't worry though…it happens to the best of us.</p>
+					<p></p><a href="/">Click here</a> to go back to the main page.</p>
 				</div>
 			</div>
 			<div class="right">
@@ -103,7 +69,7 @@
 				</div>
 				<div class="contact">
 					<h2>Contact</h2>
-					<p>Do you have a question? Some feedback? Maybe a bug to report? Feel free to leave a <a href="#disqus_thread">comment</a>, or <a href="mailto:info@browzrjs.org">e-mail</a> me, and I'll get back to you as soon as possible.</p>
+					<p>Do you have a question? Some feedback? Maybe a bug to report? Feel free to leave a <a href="./#disqus_thread">comment</a>, or <a href="mailto:info@browzrjs.org">e-mail</a> me, and I'll get back to you as soon as possible.</p>
 				</div>
 				<div class="twitter">
 					<h2>Twitter Feed</h2>
@@ -117,11 +83,38 @@
 							<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</div>
 					</div>
-					<div id="feed"></div>
+					<script type="text/javascript" src="assets/js/widget.js"></script>
+					<script type="text/javascript">
+						new TWTR.Widget({
+  							version: 2,
+  							type: 'profile',
+  							rpp: 6,
+  							interval: 30000,
+  							width: 'auto',
+  							height: 'auto',
+  							theme: {
+    							shell: {
+      								background: 'transparent',
+      								color: '#2f3336'
+    							},
+    							tweets: {
+      								background: 'transparent',
+      								color: '#2f3336',
+      								links: '#e03a3a'
+    							}
+  							},
+  							features: {
+    							scrollbar: false,
+    							loop: false,
+    							live: false,
+    							behavior: 'all'
+  							}
+						}).render().setUser('BrowzrJS').start();
+					</script>
 				</div>
 			</div>
 		</section>
-		<div class="clear"></div>
+		<div style="clear: both;"></div>
 		<footer>
 			<img class="shadow-top" src="assets/images/theme/shadow-top.png" alt="">
 			<div id="social">
@@ -133,14 +126,5 @@
 			</div>
 		</footer>
 	</div>
-
-	<script type="text/javascript" src="browzr/jquery.browzr.js"></script>
-	<script type="text/javascript" src="assets/js/shCore.js"></script>
-	<script type="text/javascript" src="assets/js/shBrushCss.js"></script>
-	<script type="text/javascript" src="assets/js/twitterFetcher.min.js"></script>
-	<script type="text/javascript" src="assets/js/scripts.js"></script>
-	<script type="text/javascript">
-		twitterFetcher.fetch('426343064307634176', 'feed', 3, true);
-	</script>
 </body>
 </html>

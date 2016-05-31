@@ -224,13 +224,8 @@ ul#browsers {
 	list-style: none;
 }
 ul#browsers li {
-	margin-right: 13px;
+	margin-right: 12px;
 	float: left;
-}
-@-moz-document url-prefix() {
-	ul#browsers li {
-		margin-right: 12px;
-	}
 }
 ul#browsers li:last-child {
 	margin-right: 0px;

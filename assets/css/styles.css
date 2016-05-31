@@ -1,0 +1,368 @@
+/* ======== */
+/* ! BASE   */
+/* ======== */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+::-webkit-selection {
+	background: #e03a3a;
+	color: #fff;
+}
+::-moz-selection {
+	background: #e03a3a;
+	color: #fff;
+}
+::selection {
+	background: #e03a3a;
+	color: #fff;
+}
+body {
+	background: url('../images/theme/background.jpg') repeat center top transparent;
+}
+header, footer {
+	width: 960px;
+	text-align: center;
+}
+header {
+	margin: 25px auto 15px;
+}
+footer {
+	margin: -5px auto 15px;
+	height: 100px;
+}
+section {
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
+p {
+	line-height: 18px;
+}
+a {
+	color: #e03a3a;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+strong, em {
+	color: #e03a3a;
+	font-weight: 200;
+}
+
+
+/* ========== */
+/* ! LAYOUT   */
+/* ========== */
+
+#wrapper {
+	width: 100%;
+}
+section#downloads {
+	background-color: transparent;
+}
+section#content {
+	margin: 0px auto;
+	width: 960px;
+}
+.left, .right {
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	   -moz-box-shadow: 0px 0px 5px #999;
+	        box-shadow: 0px 0px 5px #999;
+}
+.left {
+	float: left;
+	padding: 15px;
+	width: 600px;
+}
+.right {
+	float: right;
+	width: 310px;
+}
+.right .support, .right .license, .right .contact {
+	margin-left: 15px;
+}
+.right .support {
+	margin-bottom: 55px;
+}
+.right .license, .right .contact {
+	margin-bottom: 60px;
+}
+.clear {
+	clear: both;
+}
+
+
+/* =========== */
+/* ! MODULES   */
+/* =========== */
+
+.shadow-bottom {
+	margin-top: 10px;
+}
+p.blurb {
+	margin: 1px 9px 7px;
+	color: #a8a6a0;
+	text-align: left;
+	font-weight: 200;
+	font-size: 34px;
+	line-height: 40px;
+}
+.ctas {
+	margin-top: 42px;
+	margin-bottom: 17px;
+	height: 54px;
+	text-align: center;
+}
+.preview, .download, .github {
+	margin: 0px 15px;
+	padding: 18px 105px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.preview {
+	background: url('../images/content/preview.png') no-repeat left top transparent;
+}
+.preview.unavailable {
+	background: url('../images/content/preview-unavailable.png') no-repeat left top transparent;
+}
+.download {
+	background: url('../images/content/download.png') no-repeat left top transparent;
+}
+.download.unavailable {
+	background: url('../images/content/download-unavailable.png') no-repeat left top transparent;
+}
+.github {
+	background: url('../images/content/fork.png') no-repeat left top transparent;
+}
+.github.unavailable {
+	background: url('../images/content/fork-unavailable.png') no-repeat left top transparent;
+}
+section#content .documentation {
+	font-size: 14px;
+	line-height: 18px;
+}
+section#content .documentation ol {
+	margin: 0px 0px 15px;
+}
+section#content .documentation ol li {
+	margin: 5px 0px;
+	padding-left: 10px;
+}
+section#content h2 {
+	margin: 0px;
+	padding-bottom: 13px;
+	color: #e03a3a;
+	text-align: left;
+	font-weight: 200;
+	font-size: 21px;
+}
+@-moz-document url-prefix() {
+	section#content h2 {
+		padding-bottom: 12px;
+	}
+}
+section#content .mit-gpl h2 {
+	padding: 0px;
+}
+section#content p {
+	margin: 0px 0px 15px;
+	font-size: 14px;
+}
+section#content pre {
+	padding: 0px;
+	border: 5px solid #ddd;
+	text-align: left;
+	font-size: 14px;
+}
+section#content pre ol {
+	margin: 0px !important;
+}
+section#content .prettyprint {
+	width: auto;
+}
+section#content .height {
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+	height: 300px;
+}
+section#content .prettyprint ol, section#content .prettyprint ul {
+	padding: 9px 0px 5px 35px;
+}
+section#content .support h2, section#content .license h2, section#content .contact h2 {
+	margin-bottom: 13px;
+	padding: 0px 0px 10px;
+	border-bottom: 1px dotted #e03a3a;
+}
+section#content .support h2 {
+	margin-top: 12px;
+}
+@-moz-document url-prefix() {
+	section#content .support h2 {
+		margin-top: 15px;
+	}
+}
+section#content .right .support p {
+	margin-top: 12px;
+	margin-bottom: 0px;
+}
+section#content .right .support ul {
+	margin: 0px 15px;
+	padding: 0px;
+	list-style: none;
+	text-align: left;
+	font-weight: 200;
+	font-size: 18px;
+}
+section#content .right .support ul li {
+	margin: 5px 0px;
+}
+section#content .right .support ul li img {
+	padding-bottom: 5px;
+	vertical-align: middle;
+}
+section#content .right .license p {
+	padding-right: 15px;
+}
+section#content .right .contact p {
+	padding-right: 15px;
+}
+section#content .twitter h2 {
+	margin-left: 15px;
+	padding: 0px 0px 10px;
+	border-bottom: 1px dotted #e03a3a;
+}
+section#content .twitter-buttons {
+	position: relative;
+	z-index: 9999;
+	float: right;
+	margin-top: -36px;
+	width: 146px;
+	font-size: 14px;
+}
+section#content .share {
+	float: left;
+	margin-right: 14px;
+}
+section#content .follow {
+	float: right;
+	padding-right: 15px;
+	width: 60px;
+}
+section#content #feed {
+	padding-bottom: 15px;
+}
+section#content #feed ul {
+	padding: 0;
+	list-style: none;
+}
+section#content #feed ul li {
+	padding: 15px 15px 0;
+}
+section#content #feed ul li .user a span, section#content #feed ul li .interact {
+	display: none;
+}
+section#content #feed ul li .user a img {
+	float: left;
+	margin-right: 15px;
+	width: 36px;
+}
+section#content #feed ul li .tweet {
+	padding-left: 51px;
+}
+section#content #feed ul li .timePosted {
+	margin-bottom: 0;
+	color: #ccc;
+	text-align: right;
+	font-size: 12px;
+}
+footer .shadow-top {
+	margin-top: 20px;
+	margin-bottom: 16px;
+}
+footer .twitter, footer .facebook, footer .dribbble, footer .forrst, footer .lastfm, footer .linkedin, footer .tumblr {
+	margin: 0px 2px;
+	padding: 8px 17px;
+}
+footer .twitter {
+	background: url('../images/theme/twitter.png') no-repeat left top transparent;
+}
+footer .facebook {
+	background: url('../images/theme/facebook.png') no-repeat left top transparent;
+}
+footer .dribbble {
+	background: url('../images/theme/dribbble.png') no-repeat left top transparent;
+}
+footer .forrst {
+	background: url('../images/theme/forrst.png') no-repeat left top transparent;
+}
+footer .lastfm {
+	background: url('../images/theme/lastfm.png') no-repeat left top transparent;
+}
+footer .linkedin {
+	background: url('../images/theme/linkedin.png') no-repeat left top transparent;
+}
+footer .tumblr {
+	background: url('../images/theme/tumblr.png') no-repeat left top transparent;
+}
+footer .twitter:hover, footer .facebook:hover, footer .dribbble:hover, footer .forrst:hover, footer .lastfm:hover, footer .linkedin:hover, footer .tumblr:hover {
+	background-position: 0px -61px;
+}
+.back p {
+	float: right;
+	margin: 0px !important;
+	padding: 0px !important;
+	color: #e03a3a;
+}
+#disqus_thread {
+	margin-top: 40px !important;
+}
+a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
+	text-decoration: none !important;
+	font-weight: normal;
+}
+a.dsq-subscribe-email:hover em, a.dsq-subscribe-rss:hover em {
+	text-decoration: underline !important;
+}
+
+
+/* ========== */
+/* ! STATES   */
+/* ========== */
+
+.preview:hover, .download:hover, .github:hover {
+	background-position: 0px -56px;
+}
+.preview:active, .download:active, .github:active {
+	background-position: 0px -112px;
+}
+.twtr-user, .twtr-ft, footer span {
+	display: none;
+}
+
+
+/* ======= */
+/* ! IE9   */
+/* ======= */
+
+.ie9 section#content .prettyprint ol, .ie9 section#content .prettyprint ul {
+	padding-top: 7px;
+}
+
+
+/* ========= */
+/* ! OLDIE   */
+/* ========= */
+
+.oldie .ctas {
+	margin-top: 22px;
+}
+.oldie .preview, .oldie .download, .oldie .github {
+	display: inline-block;
+}
